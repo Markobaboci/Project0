@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Google Advanced Search</title>
-    </head>
-    <body>
-        <form action="https://www.google.de/advanced_search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Advanced Search">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="advanced_search.css">
+</head>
+<body>
+    <div class="container">
+        <h2><a href="index.html">Back to google search</a></h2>
+        <h1>Advanced Search</h1>
+        <h3>Find pages with...</h3>
+        <form id="advanced-search-form" method="get" action="https://www.google.com/search">
+            <div class="form-group">
+                <label for="all-words">all these words:</label>
+                <input type="text" id="all-words" name="as_q">
+            </div>
+            <div class="form-group">
+                <label for="exact-phrase"> this exact phrase:</label>
+                <input type="text" id="exact-phrase" name="as_epq">
+            </div>
+            <div class="form-group">
+                <label for="any-words">any of these words:</label>
+                <input type="text" id="any-words" name="as_oq">
+            </div>
+            <div class="form-group">
+                <label for="none-words">none of these words:</label>
+                <input type="text" id="none-words" name="as_eq">
+            </div>
+            <button type="submit">Advanced Search</button>
         </form>
+    </div>
+</body>
+</html>
+
+<!--
+ ALL THESE WORDS: https://www.google.com/search?as_q=marko&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&as_filetype=&tbs=
+ the exact phrase:https://www.google.com/search?as_q=&as_epq=marko&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&as_filetype=&tbs=
+ any of thowords: https://www.google.com/search?as_q=&as_epq=&as_oq=marko&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&as_filetype=&tbs=
+ none of words  : https://www.google.de/search?as_q=&as_epq=&as_oq=&as_eq=marko&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&as_filetype=&tbs=
+ Normal Google:   https://www.google.com/search?q=marko&sca_esv=d65c73666fce9bae&sca_upv=1&sxsrf=ADLYWIL3lvJugTitIMW6UK9P05YzqHV9Dg%3A1716899461811&source=hp&ei=hc5VZsOnL6GM7NYP_Y-zMA&iflsig=AL9hbdgAAAAAZlXclY7-69rD3vXv0CvwfrCqqTXqlP3x&ved=0ahUKEwiD_qL0rLCGAxUhBtsEHf3HDAYQ4dUDCBg&uact=5&oq=marko&gs_lp=Egdnd3Mtd2l6GgIYAyIFbWFya28yBBAjGCcyChAjGIAEGCcYigUyDxAAGIAEGEMYigUYChiLAzIXEC4YgAQYpgMYxwEYqAMYiwMYjgUYrwEyExAuGIAEGEMYqAMYigUYmgMYiwMyDRAAGIAEGEMYigUYiwMyDRAAGIAEGEMYigUYiwMyDRAAGIAEGEMYigUYiwMyBRAAGIAEMgUQLhiABEjuAlAAWIMCcAB4AJABAJgBsQGgAckEqgEDMC40uAEDyAEA-AEBmAIEoAL8BJgDAJIHAzAuNKAH8TE&sclient=gws-wiz
+-->  
     </body>
 </html>
